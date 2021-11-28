@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { InputErrorDirective } from './input-error.directive';
 import { ResumeComponent } from './resume/resume.component';
+import { PhonePipePipe } from './phone-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ResumeComponent } from './resume/resume.component';
     FormulaireComponent,
     InputErrorDirective,
     ResumeComponent,
+    PhonePipePipe,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

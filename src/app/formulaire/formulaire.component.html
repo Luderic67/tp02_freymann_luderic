@@ -105,16 +105,19 @@
   </div>
   <div class="form-group">
     <label for="country" class="form-label">Pays <span>*</span></label>
-    <input
-      type="text"
-      name="counrty"
+    <select
+      name="country"
       id="country"
       class="form-control"
       #country_model="ngModel"
       [(ngModel)]="country"
       appInputError
       required
-    />
+    >
+      <option value="france">France</option>
+      <option value="deutsch">Deutschland</option>
+      <option value="us">United-States</option>
+    </select>
     <div
       *ngIf="
         country_model.invalid && (country_model.dirty || country_model.touched)

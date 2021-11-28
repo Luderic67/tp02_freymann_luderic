@@ -10,7 +10,7 @@
     <li><b>Code postal :</b> {{ cp }}</li>
     <li><b>Ville :</b> {{ city }}</li>
     <li><b>Pays :</b> {{ country }}</li>
-    <li><b>Téléphone :</b> {{ phone }}</li>
+    <li><b>Téléphone :</b> {{ phone | phonePipe: country }}</li>
     <li><b>Civilité :</b> {{ civ }}</li>
     <li><b>Email :</b> {{ email }}</li>
     <li><b>Login :</b> {{ login }}</li>
